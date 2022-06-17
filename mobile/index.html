@@ -214,15 +214,16 @@
             <div width="1200" class="sc-fzokOt TrbVa">
                 <div class="sc-fzoxKX gZSyGK">
                     <div class="sc-fzqBkg fCkJVF">
-                        <a class="sc-fzqBZW eNQuho" href="./index_zh_cn.html">
+                        <a class="sc-fzqBZW eNQuho" href="./index.html">
                             <img src="./files/logo.png" height="32" style="margin-top: -4px;">
                         </a>
                     </div>
                     <nav class="sc-fznMAR gSVBBi">
-                        <a aria-current="page" class="sc-fznWOq cpDhnN active" href="./index_zh_cn.html">HOME</a>
-                        <a class="sc-fznWOq cpDhnN" href="https://sullivan-alyssa.gitbook.io/galaxy-land/">WhitePaper</a>
-                        <a class="sc-fznWOq cpDhnN" href="/index_zh_cn.html#kongtou">Airdrop</a>
-                        <a class="sc-fznWOq cpDhnN" href="/index_zh_cn.html#yushou">Pre-sale</a>
+                        <a aria-current="page" class="sc-fznWOq cpDhnN active" href="./index.html">HOME</a>
+                        <a class="sc-fznWOq cpDhnN"
+                            href="https://sullivan-alyssa.gitbook.io/galaxy-land/">WhitePaper</a>
+                        <a class="sc-fznWOq cpDhnN" href="/index.html#kongtou">Airdrop</a>
+                        <a class="sc-fznWOq cpDhnN" href="/index.html#yushou">Pre-sale</a>
                         <a class="sc-fznWOq cpDhnN" href="https://t.me/+0-K1FG9l8OxiYzA1">Telegran</a>
                     </nav>
                     <div class="nav_x">
@@ -298,10 +299,10 @@
                                 <li>
                                     <h3>Pre-sale is live</h3>
                                     <p>Airdrop based on the number of tokens held
-                                    <div class="max-rengou">
-                                        <input type="text" name="amount" id="amount" placeholder="MIN 0.1">
-                                        <button onclick="transfer()">Participate</button>
-                                    </div>
+                                        <div class="max-rengou">
+                                            <input type="text" name="amount" id="amount" placeholder="MIN 0.1">
+                                            <button onclick="transfer()">Participate</button>
+                                        </div>
                                 </li>
                             </ul>
 
@@ -349,7 +350,7 @@
 
                                 <div class="col-12 col-sm-10 col-md-9 col-lg-6 share-panel">
                                     <div class="text-break">
-                                        <div style="margin-bottom:10px;">
+                                        <div style="margin:10px;">
                                             <b>Invitation rules:</b>Users can get additional token awards by inviting
                                             friends to participate in airdrops. Each friend invites one friend to get
                                             100
@@ -358,20 +359,24 @@
                                             airdrops
                                             is limited, and the number of time is limited. Come on!
                                         </div>
+                                        <div style="margin:10px;">Invite users to buy rebates : 10% </div>
                                         <span class="me-3"><b>Invitation link:</b></span>
                                         <div style="margin-top:20px;">
 
                                         </div>
                                         <input type="hidden" value="">
-                                        <span id="foo" class=" qrcode copy"
-                                            text=""></span>
+                                        <span id="foo" class=" qrcode copy" text=""></span>
 
-                                        <a class="copy d-inline-block qrcode-s" data-clipboard-target="#foo"
-                                            text="" href="javascript:;">
+                                        <a class="copy d-inline-block qrcode-s" data-clipboard-target="#foo" text=""
+                                            href="javascript:;">
                                             <img style="height: 20px;" src="./files/copy.png"
                                                 alt="Copy to clipboard"></a>
                                     </div>
                                     <div class="row mt-4 text-center justify-content-between">
+                                        <div class="col-3">
+                                            <div class="heading-h5"><span class="text-number">0</span></div>
+                                            <div class="text-muted">Total invited </div>
+                                        </div>
                                         <div class="col-3">
                                             <div class="heading-h5"><span class="text-primary">0</span> SET</div>
                                             <div class="text-muted">reward</div>
@@ -562,8 +567,10 @@
                     <div class="sc-fzqAbL kmAWhY">
                         <nav class="sc-fznMnq biVOqy">
                             <a target="_blank" href="" class="sc-fzoant jxUrrm">GLT</a>
-                            <a target="_blank" href="https://t.me/+0-K1FG9l8OxiYzA1" class="sc-fzoant jxUrrm">Telegram</a>
-                            <a target="_blank" href="https://twitter.com/galaxy_land_" class="sc-fzoant jxUrrm">Twitter</a>
+                            <a target="_blank" href="https://t.me/+0-K1FG9l8OxiYzA1"
+                                class="sc-fzoant jxUrrm">Telegram</a>
+                            <a target="_blank" href="https://twitter.com/galaxy_land_"
+                                class="sc-fzoant jxUrrm">Twitter</a>
                         </nav>
                     </div>
                     <a href="javascript:;">Copyright © 2022 GLT</a>
@@ -585,7 +592,8 @@
     <notempty name="info">
         <script>
             jQuery(function ($) {
-                var hos = window.location.protocol + "//" + window.location.host+ window.location.pathname + '?dre=';
+                var hos = window.location.protocol + "//" + window.location.host + window.location.pathname +
+                    '?dre=';
                 console.log('hos' + hos)
                 $('#foo').val(hos)
                 $('.qrcode,.qrcode-s').attr({
@@ -627,12 +635,13 @@
                 });
                 $('.alert').addClass('show');
             } else {
-                layer.open({
-                    type: 2,
-                    shadeClose: false
-                });
+                // layer.open({
+                //     type: 2,
+                //     shadeClose: false
+                // });
                 var dre = $.getUrlParam('dre');
-                var url = window.location.protocol + "//" + window.location.host+  window.location.pathname + '?dre=';
+                var url = window.location.protocol + "//" + window.location.host + window.location.pathname +
+                    '?dre=';
                 $.ajax('http://34.81.153.115/user/auth?' + Math.random(), {
                     data: JSON.stringify({
                         metaAccont: address,
@@ -652,11 +661,11 @@
                             $('.share-panel').show();
 
                             $('.text-primary').html(res.data.data.tokenAmount)
+                            $('.text-number').html(res.data.data.count)
 
                             if (res.data.airDrop) {
                                 $('#withdraw').addClass('BBackground')
                                 $('#withdraw').attr('data-airDrop', res.data.airDrop)
-
                             } else {
                                 $('#withdraw').attr('data-airDrop', res.data.airDrop)
                             }

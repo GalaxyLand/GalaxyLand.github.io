@@ -140,6 +140,10 @@ input {
     margin: 24px;
 }
 
+#withdraw{
+    background-color: #b8b8b8;
+}
+
 .routeMap-man-list {
     display: flex;
     flex-direction: row;
